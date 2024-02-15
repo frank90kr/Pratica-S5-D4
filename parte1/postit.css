@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 2.1rem;
+  font-family: Indie Flower;
+}
+
+.container {
+  background-color: #666666;
+  opacity: 0 0.5s;
+}
+
+h2,
+p {
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  font-weight: bold;
+  padding-bottom: 1.2rem;
+  font-size: 2.6rem;
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  gap: 80px;
+  margin: 4.2rem;
+  padding-top: 3rem;
+}
+.task1,
+.task5,
+.task7 {
+  width: 320px;
+  min-height: 260px;
+  background-color: #f7f7c5;
+  border: 1px solid black;
+
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+
+  box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.5);
+  transform: rotate(-6deg);
+}
+.task2,
+.task4,
+.task8 {
+  width: 320px;
+  min-height: 260px;
+  background-color: #c9f9c9;
+  border: 1px solid black;
+
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+
+  transform: rotate(6deg);
+  box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.5);
+}
+.task3,
+.task6 {
+  width: 320px;
+  min-height: 260px;
+  background-color: #c4c4ef;
+  border: 1px solid black;
+
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+
+  transform: rotate(-10deg);
+  box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.row2 {
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  gap: 60px;
+  padding-bottom: 3rem;
+}
+
+.task1:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  transform: rotate(-1deg);
+  cursor: pointer;
+}
+.task2:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  transform: rotate(-1deg);
+  cursor: pointer;
+}
+.task3:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  transform: rotate(-1deg);
+  cursor: pointer;
+}
+.task4:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  transform: rotate(-1deg);
+  cursor: pointer;
+}
+.task5:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  transform: rotate(-1deg);
+  cursor: pointer;
+}
+.task6:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  transform: rotate(-1deg);
+  cursor: pointer;
+}
+.task7:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  transform: rotate(-1deg);
+  cursor: pointer;
+}
+.task8:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  transform: rotate(-1deg);
+  cursor: pointer;
+}
+
+@keyframes spiaccica {
+  0% {
+    opacity: 0;
+    transform: scale3d(8);
+  }
+  25% {
+    opacity: 0;
+    transform: scale(8);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(6);
+  }
+  55% {
+    opacity: 1;
+    transform: scale(4);
+  }
+  65% {
+    opacity: 1;
+    transform: scale(2);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.task1 {
+  animation: spiaccica 1s backwards;
+}
+.task2 {
+  animation: spiaccica 1.4s backwards;
+}
+.task3 {
+  animation: spiaccica 1.8s backwards;
+}
+.task4 {
+  animation: spiaccica 2.2s backwards;
+}
+.task5 {
+  animation: spiaccica 2.6s backwards;
+}
+.task6 {
+  animation: spiaccica 3s backwards;
+}
+.task7 {
+  animation: spiaccica 3.4s backwards;
+}
+.task8 {
+  animation: spiaccica 3.6s backwards;
+}
